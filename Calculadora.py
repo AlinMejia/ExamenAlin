@@ -11,13 +11,11 @@ def raizNum(x,y):
      print("La raiz de x ",math.pow(x,1/y))
 def PotenNum(x,y):
      print("La potencia es ",math.pow(x,y))
-def SenNum(x,y):
+def SenNum(x):
    fx= float(x)
-   fy= float(y)
    rx= math.radians(fx)
-   ry= math.radians(fy)
    print ("El seno de x : ", math.sin(rx))
-   print ("El seno de y : ", math.sin(ry))
+
   
   
   
@@ -37,10 +35,10 @@ Menu
 8) Salir""")
     opcion=int(input("Ingrese su opcion a calcular: "))
     if opcion >= 8 or opcion < 0:
-        print("gracias por usar mi calculadora")
+        print("Gracias por usar mi calculadora")
         resultado="no"
          
- else:
+    else:
         
         if opcion == 7:
           x=int(input("Ingrese el primer numero para calcular: "))
@@ -64,5 +62,5 @@ Menu
            SenNum(x)
              
         else:
-          print("gracias por usar mi calculadora dentro del sw")
-        resultado=input("ingrese 'si' o 'no' para realizar un nuevo calculo: ")
+          print("Gracias por usar mi calculadora")
+        resultado=input("Ingrese 'si' o 'no' para realizar un nuevo calculo: ")
