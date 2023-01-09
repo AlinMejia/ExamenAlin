@@ -1,4 +1,26 @@
 import math
+def sumita(x,y):
+    print("La suma es ", x+y)
+def restita(x,y):
+    print("La resta es ", x-y)
+def multiNum(x,y):
+    print("La multiplicación es ", x*y)
+def divNum(x,y):
+    print("La división es ", x*y)
+def raizNum(x,y):
+     print("La raiz de x ",math.pow(x,1/y))
+def PotenNum(x,y):
+     print("La potencia es ",math.pow(x,y))
+def SenNum(x,y):
+   fx= float(x)
+   fy= float(y)
+   rx= math.radians(fx)
+   ry= math.radians(fy)
+   print ("El seno de x : ", math.sin(rx))
+   print ("El seno de y : ", math.sin(ry))
+  
+  
+  
 resultado="si"
 while resultado!="no":
     print ("""************
@@ -17,28 +39,24 @@ Menu
     if opcion >= 8 or opcion < 0:
         print("gracias por usar mi calculadora")
         resultado="no"
+         
     else:
         x=int(input("Ingrese el primer numero para calcular: "))
         y=int(input("Ingrese el segundo numero para calcular: "))
         if opcion==1:
-            print("la suma es ", x+y)
+            sumita(x,y)
         elif opcion==2:
-            print("la resta es ", x-y)
+            restita(x,y)
         elif opcion==3:
-            print("la multiplicacion es ", x*y)
+            multiNum(x,y)
         elif opcion==4:
-            print("la division es ",x/y)
+            divNum(x,y)
         elif opcion==5:
-            print("la raiz de x ",math.pow(x,1/y))
+           raizNum(x,y)
         elif opcion==6:
-            print("la potencia es ",math.pow(x,y))
+           PotenNum(x,y)  
         elif opcion==7:
-            fx= float(x)
-            fy= float(y)
-            rx= math.radians(fx)
-            ry= math.radians(fy)
-            print ("El seno de x : ", math.sin(rx))
-            print ("El seno de y : ", math.sin(ry))
+           SenNum(x,y)
              
         else:
           print("gracias por usar mi calculadora dentro del sw")
