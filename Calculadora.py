@@ -40,9 +40,14 @@ Menu
         print("gracias por usar mi calculadora")
         resultado="no"
          
-    else:
-        x=int(input("Ingrese el primer numero para calcular: "))
-        y=int(input("Ingrese el segundo numero para calcular: "))
+ else:
+        
+        if opcion == 7:
+          x=int(input("Ingrese el primer numero para calcular: "))
+        else:
+          x=int(input("Ingrese el primer numero para calcular: "))
+          y=int(input("Ingrese el segundo numero para calcular: "))
+        
         if opcion==1:
             sumita(x,y)
         elif opcion==2:
@@ -56,7 +61,7 @@ Menu
         elif opcion==6:
            PotenNum(x,y)  
         elif opcion==7:
-           SenNum(x,y)
+           SenNum(x)
              
         else:
           print("gracias por usar mi calculadora dentro del sw")
